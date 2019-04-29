@@ -161,7 +161,7 @@ gulp.task("default", gulp.series(["babel", "watch"]))
 
 ## 使用 sourcemaps 和压缩
 
-注意压缩使用 rollup-plugin-uglify 插件，为了提升打包速度，我们把模块文件放到 src/js/modules 文件夹下，将 gulp.src("src/js/*.js") 改为 gulp.src("src/js/*.js") 只打包主文件不打包依赖模块。
+注意压缩使用 rollup-plugin-uglify 插件，为了提升打包速度，我们把模块文件放到 src/js/modules 文件夹下，将 gulp.src("src/js/\*.js") 改为 gulp.src("src/js/\*.js") 只打包主文件不打包依赖模块。
 
 安装 gulp-sourcemaps 和 rollup-plugin-uglify 插件：
 ```
